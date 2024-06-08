@@ -1,0 +1,19 @@
+.ModifierCheckbox {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  width: 100%;
+  &.single {
+    padding: 3px 16px;
+    border: 1px solid var(--lightgray-2);
+    border-radius: 12px;
+  }
+  :global .MuiFormControlLabel-label {
+    font-size: 12px;
+  }
+  .counter {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,80 @@
+.NotificationsWrapper {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.014em;
+
+  .NotificationDrop {
+    padding: 5px 20px;
+
+    .Notification {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .Content {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        height: 25px;
+        overflow: hidden;
+        line-height: 20px;
+        transition: 1s ease all;
+
+        .title {
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+        }
+
+        .openedTitle {
+          overflow: auto;
+        }
+      }
+
+      .OpenedContent {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        overflow: hidden;
+        line-height: 20px;
+        transition: 1s ease all;
+      }
+
+      .Buttons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .more {
+          text-decoration: underline;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+
+  .opened {
+    height: auto;
+    overflow-y: auto;
+  }
+
+  .alert {
+    background-color: rgba(242, 39, 28, 0.85);
+  }
+
+  .news {
+    background-color: #22C348;
+  }
+
+  .warning {
+    background-color: rgba(243, 198, 51, 0.952);
+  }
+}

@@ -1,0 +1,108 @@
+.cart {
+  position: sticky;
+  top: 0;
+  right: 0;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  width: 334px;
+  height: calc(100vh - 84px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .products {
+    overflow: auto;
+    max-height: calc(100vh - 220px);
+  }
+  &_item {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e5e9eb;
+    margin-bottom: 1rem;
+    font-family: "SF Pro Display", sans-serif;
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      h4 {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        color: #252c32;
+      }
+    }
+    .details {
+      font-size: 14px;
+      line-height: 17px;
+      color: #828282;
+      margin-bottom: 2px;
+    }
+    .actions {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      user-select: none;
+      .price {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 22px;
+        color: #1a2024;
+      }
+    }
+    &:last-of-type {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.popover_body {
+  max-height: 362px;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--darkgray-1);
+  }
+
+  .single_modifier {
+    margin-bottom: 12px;
+
+    h4 {
+      margin-bottom: 12px;
+    }
+  }
+
+  .modifier_group,
+  .option_group {
+    border: 1px solid var(--lightgray-2);
+    border-radius: 12px;
+    padding: 12px 12px 3px;
+    margin-bottom: 12px;
+
+    &__title {
+      margin-bottom: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .option_group {
+    .option {
+      & + span {
+        font-size: 12px;
+      }
+      :global .MuiFormControlLabel-label {
+        font-size: 12px;
+      }
+    }
+  }
+}

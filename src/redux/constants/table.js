@@ -1,0 +1,5 @@
+export const SET_COLUMN_ORDER = "SET_TABLE_ORDER";
+export const CLEAR_COLUMN_ORDER = "CLEAR_TABLE_ORDER";
+export const SET_ROW_LIMIT = "SET_ROW_LIMIT";
+export const CLEAR_ROW_LIMIT = "CLEAR_ROW_LIMIT";
+export const SET_ORDER_DATA = "SET_ORDER_DATA";

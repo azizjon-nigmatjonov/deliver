@@ -1,0 +1,161 @@
+.kitchen {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 6px;
+  .kitchenWrapper {
+    .line {
+      background-color: #eef0f2;
+      height: 1px;
+      width: 100%;
+    }
+    .kitchenHeader {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 500;
+      padding: 12px;
+      .orderIdWrapper {
+        display: flex;
+        align-items: center;
+        .orderId {
+          font-size: 18px;
+          font-weight: 700;
+          margin-right: 9px;
+        }
+        .infoIcon {
+          color: #6e8bb7;
+          font-size: 16px;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      .priceSection {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .orderPrice {
+          color: #6e8bb7;
+          font-size: 12px;
+          margin-right: 8px;
+        }
+      }
+    }
+
+    .orderInfoSection {
+      padding: 8px 12px 12px 12px;
+      .orderLabel {
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .modifierCont {
+        margin-left: 12px;
+        font-weight: 500;
+        font-size: 14px;
+      }
+      .variantAndModifierNames {
+        color: #48535b;
+        font-size: 14px;
+        margin-left: 12px;
+        font-weight: 400;
+
+        &:not(::last-child) {
+          padding-bottom: 12px;
+        }
+      }
+    }
+
+    .clientComment {
+      padding: 0 12px 12px 12px;
+      .commentHeadingWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .commentHead {
+          color: #6e8bb7;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+      .commentText {
+        font-size: 14px;
+        color: red;
+      }
+    }
+
+    .orderTimer {
+      padding: 0 12px 8px 12px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 4px;
+      .timeIcon {
+        font-size: 13px;
+        color: #6e8bb7;
+      }
+
+      .orderTime {
+        font-size: 12px;
+        line-height: 1;
+        font-weight: 500;
+        color: #6e8bb7;
+      }
+    }
+
+    .orderActions {
+      padding: 12px;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      button {
+        width: 140px;
+        margin-right: 6px;
+      }
+    }
+
+    .singleButton {
+      display: flex;
+      justify-self: center;
+      padding: 12px;
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1480px) {
+  .kitchen {
+    .kitchenWrapper {
+      .orderActions {
+        button {
+          width: 120px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1330px) {
+  .kitchen {
+    .kitchenWrapper {
+      .orderInfoSection {
+        .orderLabel {
+          font-size: 14px;
+        }
+      }
+      .kitchenHeader {
+        .orderIdWrapper {
+          .orderId {
+            font-size: 14px;
+          }
+        }
+      }
+      .orderActions {
+        button {
+          width: 100px;
+        }
+      }
+    }
+  }
+}

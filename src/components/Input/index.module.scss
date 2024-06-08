@@ -1,0 +1,17 @@
+.wrapper {
+  .visibility_btn {
+    cursor: pointer;
+    color: silver;
+
+    &.active {
+      color: rgba(64, 148, 247, 1);
+    }
+  }
+  .input {
+    flex: 1;
+    &::placeholder {
+      color: rgb(170, 170, 170);
+      font-size: 0.79rem;
+    }
+  }
+}

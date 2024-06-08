@@ -1,0 +1,23 @@
+.EmptyDataComponent {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  position: relative;
+
+  .block {
+    position: absolute;
+    top: 25%;
+    left: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+    .icon {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+}

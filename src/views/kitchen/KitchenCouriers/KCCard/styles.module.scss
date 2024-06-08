@@ -1,0 +1,126 @@
+.card {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  &_header,
+  &_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 4px 12px;
+  }
+  &_header {
+    border-bottom: 1px solid #e5e9eb;
+    h3 {
+      color: #303940;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    h4 {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      color: #84919a;
+    }
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 143%;
+      color: #6e8bb7;
+    }
+  }
+  &_body {
+    padding: 8px;
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      p {
+        font-size: 14px;
+        font-weight: 500;
+      }
+      span {
+        font-size: 12px;
+        color: #48535b;
+      }
+      &:first-of-type span {
+        font-weight: 600;
+      }
+    }
+  }
+  // &_footer {
+  //   cursor: pointer;
+  //   border-top: 1px solid #e5e9eb;
+  //   p {
+  //     font-weight: 500;
+  //     font-size: 14px;
+  //     line-height: 150%;
+  //   }
+  //   span {
+  //     font-weight: 500;
+  //     font-size: 14px;
+  //     line-height: 143%;
+  //   }
+  //   &.green {
+  //     background-color: #ebfff1;
+  //     span {
+  //       color: #22c348;
+  //     }
+  //   }
+  //   &.red {
+  //     background: #ffefeb;
+  //     span {
+  //       color: #f2271c;
+  //     }
+  //   }
+  // }
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: top left;
+  animation: fade 150ms ease forwards;
+  @keyframes fade {
+    from {
+      opacity: 0;
+      transform: scale(0);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+.modal {
+  &_body {
+    background-color: #eef0f2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    max-height: 452px;
+    overflow-y: auto;
+    .col {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+  &_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    color: #6e8bb7;
+    span {
+      color: #f2271c;
+    }
+  }
+  .order_card {
+    background-color: #fff;
+    border-radius: 6px;
+  }
+}

@@ -1,0 +1,108 @@
+.card {
+  width: 306px;
+  border-radius: 6px;
+  background-color: #fff;
+  overflow: hidden;
+  height: fit-content;
+  outline: 0px solid var(--primary-color);
+  & :global .MuiAccordion-root.Mui-expanded {
+    margin: 0;
+  }
+  &.cancelled {
+    .card_header {
+      color: #fff;
+      .orderId {
+        color: #fff;
+      }
+    }
+    .card_body {
+      color: #fff;
+      .variantAndModifierNames {
+        color: #fff;
+      }
+    }
+    &.active {
+      outline-color: red;
+    }
+    :global .MuiAccordion-root {
+      background-color: #ff9494;
+    }
+  }
+  &.paid {
+    &.active {
+      outline-color: #000;
+    }
+    :global .MuiAccordion-root {
+      background-color: rgb(167, 243, 208);
+    }
+  }
+  & :global .MuiPaper-elevation1 {
+    box-shadow: none;
+  }
+  &.active {
+    outline-width: 2px;
+  }
+  &_header {
+    font-weight: 500;
+    font-size: 12px;
+    color: #6e8bb7;
+    border-bottom: 1px solid #e5e9eb;
+    &_top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font-weight: 500;
+      div {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .orderId {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        color: #1a2024;
+      }
+      .icon {
+        color: #6e8bb7;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    }
+    & :global .MuiAccordionSummary-content {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  &_body {
+    flex-direction: column;
+    gap: 12px;
+    .orderLabel {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .variantAndModifierNames {
+      color: #48535b;
+      font-size: 12px;
+      &:last-child {
+        padding-bottom: 12px;
+      }
+    }
+  }
+  &_footer {
+    display: grid;
+    place-items: center;
+    padding: 12px;
+    &.green {
+      background-color: #ebfff1;
+      color: #22c348;
+    }
+    &.red {
+      background: #ffefeb;
+      color: #f2271c;
+    }
+  }
+  &:active {
+    outline-width: 2px;
+  }
+}

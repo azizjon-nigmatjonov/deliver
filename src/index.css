@@ -1,0 +1,51 @@
+@import "assets/fonts/font.css";
+
+:root {
+  --primary-color: #0e73f6;
+  --secondary-color: #ecc94b;
+  --lightgray-2: #dde2e4;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+input {
+  outline: 0;
+  background-color: transparent;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+button:focus {
+  outline: none;
+}
+
+iframe {
+  display: none;
+}
+
+/* ::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(107, 179, 250, 1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(42, 117, 192);
+} */

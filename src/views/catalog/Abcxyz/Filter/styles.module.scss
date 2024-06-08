@@ -1,0 +1,42 @@
+.filters {
+  display: flex;
+  gap: 1rem;
+  .abcxyz {
+    width: fit-content;
+    display: flex;
+    padding: 3px 1rem;
+    border: 1px solid #e5e9eb;
+    border-radius: 6px;
+    &_wrapper {
+      display: flex;
+      gap: 0.5rem;
+      color: #48535b;
+      font-size: 14px;
+      font-weight: 600;
+      &:first-of-type {
+        padding-right: 1rem;
+        border-right: 1px solid #e5e9eb;
+        margin-right: 1rem;
+      }
+      .buttons {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        button {
+          border: 1px solid #e5e9eb;
+          border-radius: 50%;
+          width: 20px;
+          height: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #9aa6ac;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .datepicker {
+    width: 200px;
+  }
+}

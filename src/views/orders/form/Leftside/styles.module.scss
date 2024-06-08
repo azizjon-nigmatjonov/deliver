@@ -1,0 +1,44 @@
+.root {
+  & :global .MuiFormGroup-root {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+  }
+  & :global .MuiFormControlLabel-root {
+    // width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  & :global .MuiFormControlLabel-label {
+    width: 100%;
+    user-select: none;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  & :global .MuiRadio-root {
+    padding: 4px;
+    width: 20px;
+    height: 20px;
+    margin-right: 0px;
+    color: rgb(13, 114, 246);
+  }
+  & :global .PrivateRadioButtonIcon-root-14 {
+    width: 20px;
+    height: 20px;
+    & svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  width: 100%;
+}
+.checked {
+  & svg {
+    fill: rgb(13, 114, 246);
+  }
+}
+.unchecked {
+  & svg {
+    fill: rgb(156, 163, 175);
+  }
+}

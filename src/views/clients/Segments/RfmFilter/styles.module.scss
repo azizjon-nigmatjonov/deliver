@@ -1,0 +1,38 @@
+.main {
+  max-width: 382px;
+  width: 100%;
+  .headSection {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+
+    p {
+      font-size: 14px;
+      color: #48535b;
+      font-weight: 600;
+      line-height: 24px;
+      span {
+        font-weight: 400;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      button {
+        border: 1px solid #e5e9eb;
+        border-radius: 50%;
+        padding: 3px 9px;
+        font-size: 12px;
+      }
+    }
+  }
+  .inputSection {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}

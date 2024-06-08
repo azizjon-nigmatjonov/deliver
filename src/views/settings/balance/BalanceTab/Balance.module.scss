@@ -1,0 +1,146 @@
+.BalanceBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 27px 24px 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  .BalanceInner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .BalanceTitle {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 26px;
+      margin-bottom: 5px;
+    }
+
+    .BalanceReplenish {
+      cursor: pointer;
+      color: #0e73f6;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: right;
+    }
+  }
+
+  .PocketIcon {
+    cursor: pointer;
+    padding: 16px;
+    background: #d7edff;
+    border-radius: 44px;
+  }
+}
+
+.LeftDaysBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 27px 24px 20px;
+  background-color: #fff;
+  border-radius: 8px;
+
+  .LeftDaysInner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .LeftDaysTitle {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 26px;
+      margin-bottom: 5px;
+    }
+
+    .LeftDaysReplenish {
+      cursor: pointer;
+      color: #a0a0a0;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: right;
+    }
+  }
+
+  .DateIcon {
+    cursor: pointer;
+    padding: 16px;
+    background: #d7edff;
+    border-radius: 44px;
+  }
+}
+
+.WithNoFilter {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.006em;
+  text-align: left;
+
+  &:first-child {
+    padding-left: 5px !important;
+  }
+}
+
+.WithFilter {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.006em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    padding: 4px 0px;
+  }
+}
+
+.payment_status_accepted {
+  width: fit-content;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #0452c8;
+  background: #d7edff;
+  border-radius: 6px;
+}
+
+.payment_status_pending {
+  width: fit-content;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #d29404;
+  background: #fffcc2;
+  border-radius: 6px;
+}
+
+.payment_status_canceled {
+  width: fit-content;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #f2271c;
+  background: linear-gradient(
+      0deg,
+      rgba(242, 39, 28, 0.15),
+      rgba(242, 39, 28, 0.15)
+    ),
+    #ffffff;
+  border-radius: 6px;
+}

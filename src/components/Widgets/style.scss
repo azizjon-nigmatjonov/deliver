@@ -1,0 +1,27 @@
+.Widgets {
+  .info-block {
+    .number {
+      color: var(--primary-color);
+      font-size: 24px;
+      line-height: 40px;
+      font-weight: 700;
+    }
+    .subtitle {
+      color: #6e8bb7;
+    }
+  }
+
+  .icon-block {
+    width: 72px;
+    height: 72px;
+    background: rgba(64, 148, 247, 0.15);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    .icon {
+      font-size: 32px;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.editing {
+  &_text {
+    // opacity: 0;
+    overflow: hidden;
+    max-height: 0px;
+    padding: 0 5px 0 5px;
+    background-color: transparent;
+    color: #fa8c16;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    text-align: center;
+    transition: 400ms ease;
+  }
+}
+.orderId {
+  position: relative;
+  max-height: 24px;
+  transition: 400ms ease;
+  &.editing {
+    max-height: 50px;
+    .editing_text {
+      // opacity: 1;
+      max-height: 26px;
+      border-color: #ffd591;
+      background-color: #fff7e6;
+    }
+  }
+}
+
+.copy {
+  position: absolute;
+  top: -2.25rem;
+  right: -0.5rem;
+  opacity: 0;
+  transition: 150ms ease;
+  &:hover {
+    opacity: 1;
+  }
+}

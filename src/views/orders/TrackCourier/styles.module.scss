@@ -1,0 +1,60 @@
+.map {
+  &_wrapper {
+    flex: 1;
+  }
+  &_popup {
+    height: 100%;
+    .popup_title {
+      color: #303940;
+      font-size: 13px;
+    }
+
+    .iconed_items {
+      display: flex;
+      margin-top: 12px;
+
+      img {
+        margin-right: 6px;
+      }
+    }
+
+    .popup_items {
+      color: #3c464e;
+      font-size: 13px;
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      a {
+        padding: 4px 16px;
+        font-size: 12px;
+        color: #303940;
+        border: 1px solid #e5e9eb;
+        justify-content: center;
+        border-radius: 6px;
+
+        &:hover {
+          color: #0e73f6;
+          background-color: #e7f1ff;
+        }
+      }
+    }
+  }
+}
+
+.courier_card {
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid #e5e9eb;
+  border-radius: 8px;
+}
+
+// ymaps [class$="balloon__layout"],
+// ymaps [class$="balloon__content"] {
+//   height: 216px;
+// }
